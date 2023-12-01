@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+        
+          height:1600px;
+          padding:20px;
+          background-color:gray ;
+
+        }
+        .main2
+        {
+          background-color: white;
+          /* width: 500px; */
+          height: 1600px;
+        }
+        .side{
+            width: 500px;
+            height:1600px;
+            background-color: grey;
+            
+
+        }
+        .s1:checked~.para
+        {
+          display: block;
+          background-color: lightcoral;
+          transform:none;
+         
+
+        }
+        .s2:checked~.para
+        {
+          display: block;
+          background-color: lightcyan;
+          transform:rotate(10deg);
+          
+          
+
+        }
+        .s3:checked~.para
+        {
+          display: block;
+          background-color: lightgoldenrodyellow;
+          transform:rotate(45deg);
+         
+
+        }
+        .s4:checked~.para
+        {
+          display: block;
+          background-color: lightgray;
+          transform:rotate x(45deg);
+         
+
+        }
+        .s5:checked~.para
+        {
+          display: block;
+          background-color: lightgreen;
+          transform:rotate x;
+         
+
+        }
+        .s6:checked~.para
+        {
+          display: block;
+          background-color:lightgrey;
+          transform:rotate y (45deg);
+          
+          
+
+        }
+        .s7:checked~.para
+        {
+          display: block;
+          background-color:lightpink;
+          transform:rotate y (80deg);
+         
+          
+
+        }
+        .s8:checked~.para
+        {
+          display: block;
+          background-color: lightsalmon;
+          transform:skew(20deg,20deg);
+          
+          
+
+        }
+        .s9:checked~.para
+        {
+          display: block;
+          background-color:lightseagreen;
+          transform:skewx(30deg);
+          
+          
+
+        }
+        .s10:checked~.para
+        {
+          display: block;
+          background-color: lightseagreen;
+          transform:skewx(40deg);
+         
+
+        }
+        .s11:checked~.para
+        {
+          display: block;
+          background-color: lightskyblue;
+          transform:skew Y (30deg);
+          
+
+        }
+        .s12:checked~.para
+        {
+          display: block;
+          background-color: lightslategray;
+          transform:skew Y(40deg);
+          
+
+        }
+        .s13:checked~.para
+        {
+          display: block;
+          background-color: lightslategrey;
+          transform:translate(20px,10px);
+          
+
+        }
+        .s14:checked~.para
+        {
+          display: block;
+          background-color:lightsteelblue;
+          transform:translate(20px,10px);
+         
+
+        }
+        .s15:checked~.para
+        {
+          display: block;
+          background-color: lightyellow;
+          translate:scale(2,2);
+         
+
+        }
+        .s16:checked~.para
+        {
+          display: block;
+          background-color: lime;
+          translate:scale(2,2);
+         
+
+        }
+        .s17:checked~.para
+        {
+          display: block;
+          background-color: limegreen;
+          transform:scale(2,3);
+          
+
+        }
+        .s18:checked~.para
+        {
+          display: block;
+          background-color:linen;
+          transform:matrix(0.866,0.7,-0.8,0.866,0,0);
+          
+
+        }
+        .s19:checked~.para
+        {
+          display: block;
+          background-color: lemonchiffon;
+          transform:matrix(0.586,0.8,-0.8,0.586,0,0);
+          
+
+        }
+        .s20:checked~.para
+        {
+          display: block;
+          background-color: plum;
+          transform:matrix(0.586,0.8,-0.8,0.586,40,30);
+          
+
+        }
+        .para
+        {
+          display:none;
+          position:absolute;
+          left:850px;
+          top:100px;
+          border:1px solid black;
+          height:250px;
+          width: 180px;
+          cursor:pointer;
+         
+          
+        }
+        span{
+            position:relative;
+            left:60px;
+            bottom: px;
+            color: BLUE;
+          }
+          p
+          {
+            border: 2px solid white;
+            width: 440px;
+            height: 25px;
+            position: relative;
+            bottom: 30px;
+            left: 25px;
+            background-color: bisque;
+            position: relative;
+            bottom: 35px;
+            
+        
+            
+          }
+        input[type=radio]+p{
+            color:white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+            
+            
+            
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main2">
+            <div class="side">
+     <input type="radio" name="transform" id="none"checked="checked" class="s1">
+     <p><span>transform:none;</span></p>
+     <div class="para">
+        The transform property applies 2D or 3D transformation to an element.
+        this property allows you to rotate,scale,move,skewetc elements
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s2">
+     <p><span>transform:rotate(10deg);</span></p>
+     <div class="para">
+        see what different values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s3">
+     <p><span>transform:rotate(45deg);</span></p>
+     <div class="para">
+        see what different values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s4">
+     <p><span>transform:rotate x(45deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s5">
+     <p><span>transform:rotate x (100deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s6">
+     <p><span>transform:rotate Y (45deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s7">
+     <p><span>transform:rotate Y (80deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s8">
+     <p><span>transform:skew(20deg,20deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s9">
+     <p><span>transform:skew x(30deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s10">
+     <p><span>transform:skew x(40deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s11">
+     <p><span>transform:skew Y (30deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s12">
+     <p><span>transform:skew Y(40deg);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s13">
+     <p><span>transform:translate(20px,10px);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s14">
+     <p><span>transform:translate(20px,10px);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s15">
+     <p><span>translate:scale(2,2);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s16">
+     <p><span>translate:scale(2,2);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s17">
+     <p><span>transform:scale(2,3);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s18">
+     <p><span>transform:matrix(0.866,0.7,-0.8,0.866,0,0);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s19">
+     <p><span>transform:matrix(0.586,0.8,-0.8,0.586,0,0);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+     <input type="radio" name="transform" id="none"checked="checked" class="s20">
+     <p><span>transform:matrix(0.586,0.8,-0.8,0.586,40,30);</span></p>
+     <div class="para">
+        see what different transform values does with this blue DIV element.
+     </div>
+            </div>
+            </div>
+            </div>
+
+
+    
+</body>
+</html>
